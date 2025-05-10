@@ -16,7 +16,12 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://kinder-fphi.onrender.com'
+]
+ALLOWED_HOSTS = ['kinder-fphi.onrender.com']
+CSRF_TRUSTED_ORIGINS = [os.getenv('CSRF_ORIGIN', 'https://kinder-fphi.onrender.com')]
+ALLOWED_HOSTS = [os.getenv('ALLOWED_HOST', 'kinder-fphi.onrender.com')]
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 

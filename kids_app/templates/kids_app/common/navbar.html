@@ -1,0 +1,72 @@
+{%load static%}
+<style>
+  .nav-link, .dropdown-item {
+    color: crimson;
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+    position: relative;
+    transition: color 0.3s ease;
+    margin-top: -20px;
+
+  }
+
+  /* Bottom line effect */
+  .line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: crimson;
+    transition: width 0.3s ease;
+  }
+
+  /* Expand underline on hover */
+  .line:hover::after {
+    width: 100%;
+  }
+</style>
+
+<!-- navbar code start -->
+<nav class="navbar navbar-expand-lg" style="background-color:#F7F7F5;"> 
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/" style="color:blueviolet"><img src="{%static 'kids_app/images/logo1.gif'%}" height="100px" alt="" ></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+        <li class="nav-item ">
+          <a class="nav-link line" href="/about_us/">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link line" href="/contact_us/">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link line" href="/gallery/">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link line" href="/poem/">Poem</a>
+        </li>
+
+           
+        <li class="nav-item">
+          <a class="nav-link line" href="/story/">Story</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link line" href="/login/">Login</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link line" href="/register/">Registration</a>
+        </li>
+      
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<!-- navbar code ends -->

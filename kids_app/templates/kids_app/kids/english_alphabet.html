@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  {%load static%}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alphabet Alphabet Speech</title>
+
+
+  <style>
+    .alphabet {
+      margin: 20px;
+      text-align: center;
+    float: left;
+    }
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+    h3 {
+      margin-top: 0px;
+      font-size: 24px;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+
+  {%include 'kids_app/kids/kids_navbar.html'%}
+
+  <!-- alphabet Alphabet (A to Z) -->
+  <div class="alphabet" onclick="speak('A for Apple')">
+    <img src="{% static 'kids_app/images/alphabet/a.jpeg' %}" alt="Apple">
+    <h3>A for Apple</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('B for Banana')">
+    <img src="{% static 'kids_app/images/alphabet/b.jpeg' %}" alt="Ball">
+    <h3>B for Banana</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('C for Cat')">
+    <img src="{% static 'kids_app/images/alphabet/c.jpeg' %}" alt="Cat">
+    <h3>C for Cat</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('D for Dog')">
+    <img src="{% static 'kids_app/images/alphabet/d.jpeg' %}" alt="Dog">
+    <h3>D for Dog</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('E for Elephant')">
+    <img src="{% static 'kids_app/images/alphabet/e.jpeg' %}" alt="Elephant">
+    <h3>E for Elephant</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('F for Fish')">
+    <img src="{% static 'kids_app/images/alphabet/f.jpeg' %}" alt="Fish">
+    <h3>F for Fish</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('G for Goat')">
+    <img src="{% static 'kids_app/images/alphabet/g.jpeg' %}" alt="Goat">
+    <h3>G for Goat</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('H for Horse')">
+    <img src="{% static 'kids_app/images/alphabet/h.jpeg' %}" alt="Horse">
+    <h3>H for Horse</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('I for Ice Cream')">
+    <img src="{% static 'kids_app/images/alphabet/i.jpeg' %}" alt="Ice Cream">
+    <h3>I for Ice Cream</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('J for Jug')">
+    <img src="{% static 'kids_app/images/alphabet/j.jpeg' %}" alt="Jug">
+    <h3>J for Jug</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('K for Kite')">
+    <img src="{% static 'kids_app/images/alphabet/k.jpeg' %}" alt="Kite">
+    <h3>K for Kite</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('L for Lion')">
+    <img src="{% static 'kids_app/images/alphabet/l.jpeg' %}" alt="Lion">
+    <h3>L for Lion</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('M for Monkey')">
+    <img src="{% static 'kids_app/images/alphabet/m.jpeg' %}" alt="Monkey">
+    <h3>M for Monkey</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('N for Nest')">
+    <img src="{% static 'kids_app/images/alphabet/n.jpeg' %}" alt="Nest">
+    <h3>N for Nest</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('O for Orange')">
+    <img src="{% static 'kids_app/images/alphabet/o.jpeg' %}" alt="Orange">
+    <h3>O for Orange</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('P for Parrot')">
+    <img src="{% static 'kids_app/images/alphabet/p.jpeg' %}" alt="Parrot">
+    <h3>P for Parrot</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('Q for Queen')">
+    <img src="{% static 'kids_app/images/alphabet/q.jpeg' %}" alt="Queen">
+    <h3>Q for Queen</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('R for Rabbit')">
+    <img src="{% static 'kids_app/images/alphabet/r.jpeg' %}" alt="Rabbit">
+    <h3>R for Rabbit</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('S for Snake')">
+    <img src="{% static 'kids_app/images/alphabet/s.jpeg' %}" alt="Snake">
+    <h3>S for Snake</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('T for Tiger')">
+    <img src="{% static 'kids_app/images/alphabet/t.jpeg' %}" alt="Tiger">
+    <h3>T for Tiger</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('U for Umbrella')">
+    <img src="{% static 'kids_app/images/alphabet/u.jpeg' %}" alt="Umbrella">
+    <h3>U for Umbrella</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('V for Van')">
+    <img src="{% static 'kids_app/images/alphabet/v.jpeg' %}" alt="Van">
+    <h3>V for Van</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('W for Watermelon')">
+    <img src="{% static 'kids_app/images/alphabet/w.jpeg' %}" alt="Watermelon">
+    <h3>W for Watermelon</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('X for Xylophone')">
+    <img src="{% static 'kids_app/images/alphabet/x.jpeg' %}" alt="Xylophone">
+    <h3>X for Xylophone</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('Y for Yak')">
+    <img src="{% static 'kids_app/images/alphabet/y.jpeg' %}" alt="Yacht">
+    <h3>Y for Yak</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('Z for Zebra')">
+    <img src="{% static 'kids_app/images/alphabet/z.jpeg' %}" alt="Zebra">
+    <h3>Z for Zebra</h3>
+  </div>
+
+  <script>
+    function speak(text) {
+      //using speech api means library of javascript->scripting language that runs on browser
+    //   alert(text);
+      const speech = new SpeechSynthesisUtterance(text);//built class object
+      speech.lang = 'en-US';  // Setting language to alphabet
+
+    
+      window.speechSynthesis.speak(speech);//windoobject.speechSynthesisobject
+    }
+  </script>
+</body>
+</html>

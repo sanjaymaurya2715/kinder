@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="hi">
+  {%load static%}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hindi Alphabet Speech</title>
+
+  {%include 'kids_app/common/common_css.html'%}
+
+  <style>
+  
+    .alphabet {
+      margin: 20px;
+      text-align: center;
+      display: block;
+    }
+    img {
+      width: 320px;
+      height: 180px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+    h3 {
+      margin-top: 0px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  {%include 'kids_app/kids/kids_navbar.html'%}
+<!-- स्वर (Vowels) -->
+  <div class="alphabet" onclick="speak('अ से अनार')">
+    <img src="{% static 'kids_app/images/hindi/1.jpg' %}" alt="अनार">
+    <h3>अ से अनार</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('आ से आम')">
+    <img src="{% static 'kids_app/images/hindi/2.jpg' %}" alt="आम">
+    <h3>आ से आम</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('इ से इमली')">
+    <img src="{% static 'kids_app/images/hindi/3.jpg' %}" alt="इमली">
+    <h3>इ से इमली</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ई से ईख')">
+    <img src="{% static 'kids_app/images/hindi/4.jpg' %}" alt="ईख">
+    <h3>ई से ईख</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('उ से उल्लू')">
+    <img src="{% static 'kids_app/images/hindi/5.jpg' %}" alt="उल्लू">
+    <h3>उ से उल्लू</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ऊ से ऊन')">
+    <img src="{% static 'kids_app/images/hindi/6.jpg' %}" alt="ऊन">
+    <h3>ऊ से ऊन</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ऊ से ऊन')">
+    <img src="{% static 'kids_app/images/hindi/7.jpg' %}" alt="ऊन">
+    <h3>ऊ से ऊन</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ए से एक')">
+    <img src="{% static 'kids_app/images/hindi/8.jpg' %}" alt="एक">
+    <h3>ए से एक</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ऐ से ऐनक')">
+    <img src="{% static 'kids_app/images/hindi/9.jpg' %}" alt="ऐनक">
+    <h3>ऐ से ऐनक</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ओ से ओखली')">
+    <img src="{% static 'kids_app/images/hindi/10.jpg' %}" alt="ओखली">
+    <h3>ओ से ओखली</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('औ से औरत')">
+    <img src="{% static 'kids_app/images/hindi/11.jpg' %}" alt="औरत">
+    <h3>औ से औरत</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('अं से अंगूर')">
+    <img src="{% static 'kids_app/images/hindi/12.jpg' %}" alt="अंगूर">
+    <h3>अं से अंगूर</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('अः से अः')">
+    <img src="{% static 'kids_app/images/hindi/13.jpg' %}" alt="अः">
+    <h3>अः से अः</h3>
+  </div>
+
+<!-- व्यंजन (Consonants) -->
+  <div class="alphabet" onclick="speak('क से कबूतर')">
+    <img src="{% static 'kids_app/images/hindi/14.jpg' %}" alt="कबूतर">
+    <h3>क से कबूतर</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ख से खरगोश')">
+    <img src="{% static 'kids_app/images/hindi/15.jpg' %}" alt="खरगोश">
+    <h3>ख से खरगोश</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ग से गमला')">
+    <img src="{% static 'kids_app/images/hindi/16.jpg' %}" alt="गमला">
+    <h3>ग से गमला</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('घ से घड़ी')">
+    <img src="{% static 'kids_app/images/hindi/17.jpg' %}" alt="घड़ी">
+    <h3>घ से घड़ी</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ङ से ङग')">
+    <img src="{% static 'kids_app/images/hindi/18.jpg' %}" alt="ङग">
+    <h3>ङ से ङग</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('च से चम्मच')">
+    <img src="{% static 'kids_app/images/hindi/19.jpg' %}" alt="चम्मच">
+    <h3>च से चम्मच</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('छ से छाता')">
+    <img src="{% static 'kids_app/images/hindi/20.jpg' %}" alt="छाता">
+    <h3>छ से छाता</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ज से जहाज')">
+    <img src="{% static 'kids_app/images/hindi/21.jpg' %}" alt="जहाज">
+    <h3>ज से जहाज</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('झ से झंडा')">
+    <img src="{% static 'kids_app/images/hindi/22.jpg' %}" alt="झंडा">
+    <h3>झ से झंडा</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ञ से ज्ञ')">
+    <img src="{% static 'kids_app/images/hindi/23.jpg' %}" alt="ज्ञ">
+    <h3>ञ से ज्ञ</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ट से टमाटर')">
+    <img src="{% static 'kids_app/images/hindi/24.jpg' %}" alt="टमाटर">
+    <h3>ट से टमाटर</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ठ से ठठेरा')">
+    <img src="{% static 'kids_app/images/hindi/25.jpg' %}" alt="ठठेरा">
+    <h3>ठ से ठठेरा</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ड से डमरू')">
+    <img src="{% static 'kids_app/images/hindi/26.jpg' %}" alt="डमरू">
+    <h3>ड से डमरू</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ढ से ढक्कन')">
+    <img src="{% static 'kids_app/images/hindi/27.jpg' %}" alt="ढक्कन">
+    <h3>ढ से ढक्कन</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ण से न')">
+    <img src="{% static 'kids_app/images/hindi/28.jpg' %}" alt="ण">
+    <h3>ण से न</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('त से तरबूज')">
+    <img src="{% static 'kids_app/images/hindi/29.jpg' %}" alt="तरबूज">
+    <h3>त से तरबूज</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('थ से थर्मस')">
+    <img src="{% static 'kids_app/images/hindi/30.jpg' %}" alt="थर्मस">
+    <h3>थ से थर्मस</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('द से दरवाजा')">
+    <img src="{% static 'kids_app/images/hindi/31.jpg' %}" alt="दरवाजा">
+    <h3>द से दरवाजा</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ध से धनुष')">
+    <img src="{% static 'kids_app/images/hindi/32.jpg' %}" alt="धनुष">
+    <h3>ध से धनुष</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('न से नल')">
+    <img src="{% static 'kids_app/images/hindi/33.jpg' %}" alt="नल">
+    <h3>न से नल</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('प से पतंग')">
+    <img src="{% static 'kids_app/images/hindi/34.jpg' %}" alt="पतंग">
+    <h3>प से पतंग</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('फ से फल')">
+    <img src="{% static 'kids_app/images/hindi/35.jpg' %}" alt="फल">
+    <h3>फ से फल</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ब से बकरी')">
+    <img src="{% static 'kids_app/images/hindi/36.jpg' %}" alt="बकरी">
+    <h3>ब से बकरी</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('भ से भालू')">
+    <img src="{% static 'kids_app/images/hindi/37.jpg' %}" alt="भालू">
+    <h3>भ से भालू</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('म से मछली')">
+    <img src="{% static 'kids_app/images/hindi/38.jpg' %}" alt="मछली">
+    <h3>म से मछली</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('य से यज्ञ')">
+    <img src="{% static 'kids_app/images/hindi/39.jpg' %}" alt="यज्ञ">
+    <h3>य से यज्ञ</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('र से रथ')">
+    <img src="{% static 'kids_app/images/hindi/40.jpg' %}" alt="रथ">
+    <h3>र से रथ</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ल से लड्डू')">
+    <img src="{% static 'kids_app/images/hindi/41.jpg' %}" alt="लड्डू">
+    <h3>ल से लड्डू</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('व से वानर')">
+    <img src="{% static 'kids_app/images/hindi/42.jpg' %}" alt="वानर">
+    <h3>व से वानर</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('श से शेर')">
+    <img src="{% static 'kids_app/images/hindi/43.jpg' %}" alt="शेर">
+    <h3>श से शेर</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ष से षट्कोण')">
+    <img src="{% static 'kids_app/images/hindi/44.jpg' %}" alt="षट्कोण">
+    <h3>ष से षट्कोण</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('स से सर्प')">
+    <img src="{% static 'kids_app/images/hindi/45.jpg' %}" alt="सर्प">
+    <h3>स से सर्प</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('ह से हल')">
+    <img src="{% static 'kids_app/images/hindi/46.jpg' %}" alt="हल">
+    <h3>ह से हल</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('क्ष से क्षत्रिय')">
+    <img src="{% static 'kids_app/images/hindi/47.jpg' %}" alt="क्षत्रिय">
+    <h3>क्ष से क्षत्रिय</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('त्र से त्रिशूल')">
+    <img src="{% static 'kids_app/images/hindi/48.jpg' %}" alt="त्रिशूल">
+    <h3>त्र से त्रिशूल</h3>
+  </div>
+
+  <div class="alphabet" onclick="speak('gyan se gyani')">
+    <img src="{% static 'kids_app/images/hindi/49.jpg' %}" alt="ज्ञान">
+    <h3>ज्ञ से ज्ञान</h3>
+  </div>
+
+  <script>
+    function speak(text) {
+      const speech = new SpeechSynthesisUtterance(text);
+      speech.lang = 'hi-IN';  // Setting language to Hindi
+      window.speechSynthesis.speak(speech);
+    }
+  </script>
+</body>
+</html>

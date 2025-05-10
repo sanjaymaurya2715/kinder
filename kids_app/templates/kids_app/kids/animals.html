@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals</title>
+
+    <style>
+        /* Container for the animals */
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Style each individual animal block */
+        .animal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            transition: transform 0.2s;
+        }
+
+        /* Hover effect to scale up the animal blocks */
+        .animal:hover {
+            transform: scale(1.1);
+        }
+
+        /* Style for the images */
+        .animal img {
+            max-width: 520px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    {% include 'kids_app/kids/kids_navbar.html' %}
+
+    <div>
+        <!-- Animal blocks -->
+        <div class="animal" onclick="speak('Cow')">
+            <img src="{% static 'kids_app/images/animals/cow.jpeg' %}" alt="Cow">
+            <p>Cow</p>
+        </div>
+
+        <div class="animal" onclick="speak('Elephant')">
+            <img src="{% static 'kids_app/images/animals/elephant.jpeg' %}" alt="Elephant">
+            <p>Elephant</p>
+        </div>
+
+        <div class="animal" onclick="speak('Lion')">
+            <img src="{% static 'kids_app/images/animals/lion.jpeg' %}" alt="Lion">
+            <p>Lion</p>
+        </div>
+
+        <div class="animal" onclick="speak('Monkey')">
+            <img src="{% static 'kids_app/images/animals/monkey.jpeg' %}" alt="Monkey">
+            <p>Monkey</p>
+        </div>
+
+        <div class="animal" onclick="speak('Zebra')">
+            <img src="{% static 'kids_app/images/animals/zebra.jpeg' %}" alt="Zebra">
+            <p>Zebra</p>
+        </div>
+
+        <div class="animal" onclick="speak('Horse')">
+            <img src="{% static 'kids_app/images/animals/horse.jpeg' %}" alt="Horse">
+            <p>Horse</p>
+        </div>
+    </div>
+
+    {% include 'kids_app/common/footer.html' %}
+
+    <script>
+        function speak(text) {
+            const speech = new SpeechSynthesisUtterance(text);
+            speech.lang = 'en-US';
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

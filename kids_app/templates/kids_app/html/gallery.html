@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Image Gallery</title>
+    <style>
+        /* Resetting some default styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        /* Page title styles */
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        /* Gallery container styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual gallery item styles */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.4s ease;
+        }
+
+        /* Hover effect */
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Overlay for captions */
+        .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 1rem;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        /* Show captions on hover */
+        .gallery-item:hover .caption {
+            opacity: 1;
+        }
+    </style>
+        {%include 'kids_app/common/common_css.html'%}
+
+</head>
+<body>
+    {%include 'kids_app/common/navbar.html'%}
+
+
+    <h1>Amazing Image Gallery</h1>
+    <div class="gallery">
+        <!-- Gallery items -->
+        <div class="gallery-item">
+            <img src="{%static 'kids_app/images/gallery/1.png'%}" alt="Gallery Image 1">
+           
+        </div>
+        <div class="gallery-item">
+            <img src="{%static 'kids_app/images/gallery/2.png'%}" alt="Gallery Image 2">
+           
+        </div>
+        <div class="gallery-item">
+            <img src="{%static 'kids_app/images/gallery/3.png'%}" alt="Gallery Image 3">
+            
+        </div>
+        <div class="gallery-item">
+            <img src="{%static 'kids_app/images/gallery/4.png'%}" alt="Gallery Image 4">
+           
+        </div>
+        <div class="gallery-item">
+            <img src="{%static 'kids_app/images/gallery/5.png'%}" alt="Gallery Image 5">
+           
+        </div>
+        <div class="gallery-item">
+            <img src="{%static 'kids_app/images/gallery/6.png'%}" alt="Gallery Image 6">
+           
+        </div>
+    </div>
+    {% include 'kids_app/common/footer.html' %}
+</body>
+</html>
